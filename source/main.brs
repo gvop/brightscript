@@ -6,7 +6,7 @@ sub showChannelSGScreen()
   screen = CreateObject("roSGScreen")
   m.port = CreateObject("roMessagePort")
   screen.setMessagePort(m.port)
-  scene = screen.CreateScene("PosterGridExample")
+  scene = screen.CreateScene("MarkupListExample")
   screen.show()
 
   while(true)
