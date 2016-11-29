@@ -3,15 +3,20 @@
 <component name = "LabelListExample" extends = "Scene" initialFocus = "exampleLabelList" >
   <script type="text/brightscript" uri="pkg:/components/tutorialBrs.brs" />
 
-  <children >
+  <children>
 
-    <LabelList id = "exampleLabelList" >
+    <LabelList
+      id = "exampleLabelList"
+      vertFocusAnimationStyle = "floatingFocus"
+      drawFocusFeedback = "false"
+      focusedColor = "0xEBEB10FF"
+      textHorizAlign = "right" >
 
       <ContentNode role = "content" >
-        <ContentNode title = "Renderable Nodes" />
-        <ContentNode title = "Z-Order/Parent-Child" />
-        <ContentNode title = "Animations" />
-        <ContentNode title = "Events and Observers" />
+        <ContentNode title = "Renderable Nodes"/>
+        <ContentNode title = "Z-Order/Parent-Child"/>
+        <ContentNode title = "Animations"/>
+        <ContentNode title = "Events and Observers"/>
       </ContentNode>
 
     </LabelList>
